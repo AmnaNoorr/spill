@@ -1,0 +1,107 @@
+:root {
+  /* Brown/Tea Color Palette - Light Theme */
+  --brown-50: #faf7f5;
+  --brown-100: #f3ede8;
+  --brown-200: #e8dcd5;
+  --brown-300: #dcc8ba;
+  --brown-400: #c9a986;
+  --brown-500: #9d6e4f;
+  --brown-600: #8b5a3c;
+  --brown-700: #6d453a;
+  --brown-800: #5c3a32;
+  --brown-900: #3e2723;
+  
+  --gold: #d4af37;
+  --gold-light: #e8d5a8;
+  
+  /* Success & Danger Colors */
+  --success: #10b981;
+  --success-light: #d1fae5;
+  --danger: #ef4444;
+  --danger-light: #fee2e2;
+  --warning: #f59e0b;
+  
+  /* Light Theme */
+  --bg-primary: #faf7f5;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f3ede8;
+  --text-primary: #3e2723;
+  --text-secondary: #6d453a;
+  --text-tertiary: #9d6e4f;
+  --accent-primary: #9d6e4f;
+  --accent-secondary: #8b5a3c;
+  --border-color: #e8dcd5;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(62, 39, 35, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(62, 39, 35, 0.12);
+  --shadow-lg: 0 10px 15px -3px rgba(62, 39, 35, 0.15);
+}
+
+[data-theme="dark"] {
+  /* Dark Mocha + Cool Gray + White */
+  --bg-primary: #141210;
+  --bg-secondary: #1f1d1b;
+  --bg-tertiary: #2a2622;
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  --text-tertiary: #9ca3af;
+  --accent-primary: #7a4a2e;
+  --accent-secondary: #9d6e4f;
+  --border-color: #3a3a3a;
+  --cool-gray: #9ca3af;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
+}
+
+/* Animations */
+@keyframes steam {
+  0% {
+      transform: translateY(0) translateX(0) scaleX(1);
+      opacity: 0.6;
+  }
+  50% {
+      transform: translateY(-30px) translateX(10px) scaleX(1.2);
+      opacity: 0.3;
+  }
+  100% {
+      transform: translateY(-60px) translateX(-10px) scaleX(0.8);
+      opacity: 0;
+  }
+}
+
+@keyframes teaFill {
+  from { height: 0; }
+  to { height: 100%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
